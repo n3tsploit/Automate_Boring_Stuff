@@ -32,5 +32,5 @@ The user gets three tries to enter the correct answer before the
 program moves on to the next question.
 Eight seconds after first displaying the question, the question is
 marked as incorrect even if the user enters the correct answer after
-the 8-second limit.
+the 8-second limit.  
 """
