@@ -1,10 +1,11 @@
 import json
 import os
-
 import requests
 from dotenv import load_dotenv
-load_dotenv()
 import sys
+
+load_dotenv()
+
 
 if len(sys.argv) < 2:
     print('USE: python3 FetchingCurrentWeatherData.py cityname, country abbreviation i.e KE for kenya')
@@ -15,8 +16,7 @@ else:
     content = requests.get(url)
     content.raise_for_status()
     print(content.text)
-    data = json.loads(content.text)
-
+    data = json.loads(content.text)  # Api key is not working...recheck later
 
 """
 Checking the weather seems fairly trivial: Open your web browser, click
