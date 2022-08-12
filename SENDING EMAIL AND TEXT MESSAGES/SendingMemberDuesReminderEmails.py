@@ -1,4 +1,6 @@
 import openpyxl
 
 wb = openpyxl.load_workbook('duesRecords.xlsx')
-wb.sheetnames
+print(wb.sheetnames)
+
+# Skipped the practie projects since it needed the use of a Gmail account
